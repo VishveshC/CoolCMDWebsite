@@ -195,8 +195,7 @@ html{
 }
 .terminal{
     position:absolute;
-    top:40px;
-    left:12px;
+    top:30px;
     width:700px;
     height:380px;
     background-color:rgba(27,34,45,.8);
@@ -208,6 +207,7 @@ html{
     font-size:17px;
     border:1px solid #106fd5;
     padding-left:5px;
+    padding-top: 5px;
     overflow-x:hidden;
     overflow-y:auto;
     scrollbar-width:none;
@@ -314,4 +314,62 @@ a:link{
     font-size: 2em;
     font-weight: 700;
     font-family:jetbrains mono,monospace
+}
+.terhead{
+    display: flex;
+    justify-content: space-between;
+}
+/*.tertext, .ui-titlecontrols{
+    display: flex;
+    justify-content: space-between;
+}*/
+.tertext{
+    z-index: 1;
+    font-family: jetbrains mono,monospace;
+    text-align: center;
+    font-size: 0.9em;
+}
+.terwindow{
+    padding-top: 5px;
+    position:absolute;
+    top:40px;
+    left:12px;
+    width:707px;
+    height:412px;
+    background-color:rgba(27,34,45,.8);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border-radius:6px;
+    animation:fadein .5s ease-in;
+    font-family:inconsolata,monospace;
+}
+.ui-titlecontrols {
+    padding-right: 5px;
+	max-width: 114px;
+	max-height: 32px;
+	flex-grow: 1;
+}
+.ui-btn {
+    border-radius: 3px;
+	margin: 0;
+	width: 38px;
+	height:20px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+.ui-btn:hover {
+	background: rgba(255,255,255,.1);
+}
+.ui-btn.close:hover {
+	background: #e81123;
+}
+.ui-btn svg path, 
+.ui-btn svg rect, 
+.ui-btn svg polygon {
+	fill: #fff;
+}
+.ui-btn svg {
+  width: 10px;
+  height: 10px;
 }
