@@ -1,4 +1,4 @@
-const terminal = document.querySelector(".terminal");
+const terreal = document.querySelector(".terreal");
 const base = `door@<span style="color: #33D7FF">uwus.xyz</span>:<span style="color: dodgerblue">~</span>$ `;
 let array = [];
 let input = "";
@@ -54,7 +54,7 @@ document.addEventListener("keydown", function(a) {
                 }
             }
             switchToNewLine(d);
-            terminal.scrollTop = terminal.scrollHeight - terminal.clientHeight;
+            terreal.scrollTop = terreal.scrollHeight - terreal.clientHeight;
             break;
         case "Backspace":
             if (input.length <= 0) return;
@@ -137,17 +137,17 @@ function print404() {
 }
 
 function inputLine(k) {
-    terminal.innerHTML += `\n<div class=\"new-line\">door@<span style=\"color: #33D7FF\">uwus.xyz</span>:<span style=\"color: dodgerblue\">~</span>$ ${k?k:""}</div>`
+    terreal.innerHTML += `\n<div class=\"new-line\">door@<span style=\"color: #33D7FF\">uwus.xyz</span>:<span style=\"color: dodgerblue\">~</span>$ ${k?k:""}</div>`
 }
 
 function writeLine(l) {
-    terminal.innerHTML += `<div>${l}</div>`
+    terreal.innerHTML += `<div>${l}</div>`
 }
 
 function clear() {
-    terminal.innerHTML = ""
+    terreal.innerHTML = ""
 }
 
 function info() {
-    terminal.innerHTML += '\n<img alt="icon" class="img" src="static/icon.png">\n' + "  <div><span>door</span>@<span>uwus.xyz</span></div>\n" + "  <div>---------------------</div>\n" + "  <div><span>OS</span>: Arch</div>\n" + "  <div><span>Age</span>: 19</div>\n" + "  <div><span>Facebook</span>: <a href=\"https://facebook.com\" target='_blank'>@DontMind</a></div>\n" + "  <div><span>Discord</span>: <a href=\"https://discord.com\" target='_blank'>OpenTheFukingDoor#8793</a></div>\n" + "  <div><span>Youtube</span>: <a href=\"https://www.youtube.com/channel/UCSsyUSWfEHtg0TyWMR4EloA\" target='_blank'>Vishvesh</a></div>\n" + "  <div><span>Github</span>: <a href=\"https://github.com/VishveshC\" target='_blank'>OpenDoor</a></div>\n" + "  <div><span>emuos</span>: <a href=\"https://emupedia.net/beta/emuos/\" target='_blank'>- lol -</a></div>\n" + "  <div><span>Voxel Network</span>: <a href=\"https://discord.gg/BUHFkkgFB6\" target='_blank'>Server</a></div>\n" + '  <div style="padding-bottom:10px; clear: both;">'
+    terreal.innerHTML += '\n<img alt="icon" class="img" src="static/icon.png">\n' + "  <div><span>door</span>@<span>uwus.xyz</span></div>\n" + "  <div>---------------------</div>\n" + "  <div><span>OS</span>: Arch</div>\n" + "  <div><span>Age</span>: 19</div>\n" + "  <div><span>Facebook</span>: <a href=\"https://facebook.com\" target='_blank'>@DontMind</a></div>\n" + "  <div><span>Discord</span>: <a href=\"https://discord.com\" target='_blank'>OpenTheFukingDoor#8793</a></div>\n" + "  <div><span>Youtube</span>: <a href=\"https://www.youtube.com/channel/UCSsyUSWfEHtg0TyWMR4EloA\" target='_blank'>Vishvesh</a></div>\n" + "  <div><span>Github</span>: <a href=\"https://github.com/VishveshC\" target='_blank'>OpenDoor</a></div>\n" + "  <div><span>emuos</span>: <a href=\"https://emupedia.net/beta/emuos/\" target='_blank'>- lol -</a></div>\n" + "  <div><span>Voxel Network</span>: <a href=\"https://discord.gg/BUHFkkgFB6\" target='_blank'>Server</a></div>\n" + '  <div style="padding-bottom:10px; clear: both;">'
 }
